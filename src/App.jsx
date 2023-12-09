@@ -1,20 +1,18 @@
 import { useState } from 'react'
 import Logo from '/face-blowing-a-kiss.svg'
+import { Canvas } from "@react-three/fiber";
+import Experience from "./Experience";
 import './App.css'
 
-function App() {
+export default function App() {
+  
   const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a>
-          <img src={Logo} className="logo" alt="Kiss" />
-        </a>
-      </div>
-      <h1>Template</h1>
-    </>
-  )
+ return (
+    <Canvas shadows camera={{ position: [3, 3, 3], fov: 40 }}>
+      <color attach="background" args={["#ececec"]} />
+      <Experience />
+    </Canvas>
+  );
 }
 
-export default App
