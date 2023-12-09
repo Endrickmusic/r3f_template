@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Logo from '/face-blowing-a-kiss.svg'
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience";
-import './App.css'
+import './index.css'
 
 export default function App() {
   
