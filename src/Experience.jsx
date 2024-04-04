@@ -1,11 +1,10 @@
-import { OrbitControls, RoundedBox } from "@react-three/drei"
-import { useLoader } from "@react-three/fiber"
-import * as THREE from "three"
+import { OrbitControls, RoundedBox, useTexture } from "@react-three/drei"
+import { } from "@react-three/fiber"
 
 
 export default function Experience(){
 
-  const normalM = useLoader(THREE.TextureLoader, "./Textures/waternormals.jpeg"); 
+  const normalMap = useTexture("./textures/waternormals.jpeg"); 
 
   return (
     <>
@@ -16,7 +15,7 @@ export default function Experience(){
           <meshStandardMaterial 
             metalness={1}
             roughness={0.12}
-            normalMap={ normalM }
+            normalMap={ normalMap }
           />
        </RoundedBox>
     </>
