@@ -4,7 +4,7 @@ import { } from "@react-three/fiber"
 
 export default function Experience(){
 
-  const normalMap = useTexture("./textures/waternormals.jpeg"); 
+  const normalMap = useTexture('./textures/waternormals.jpeg')
 
   return (
     <>
